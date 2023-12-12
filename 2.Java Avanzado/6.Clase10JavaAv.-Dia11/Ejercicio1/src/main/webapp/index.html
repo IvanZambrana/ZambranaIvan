@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Votación</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">    
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <style>
+    </style>
+    </head>
+    <body>
+        <h1>Votación</h1>
+        <p>Elija su voto:</p>
+        <form action="SvPartidos" method="POST">
+            <label>
+                <input type="radio" name="voto" value="partidoA"> Partido A
+            </label>
+            <label>
+                <input type="radio" name="voto" value="partidoB"> Partido B
+            </label>
+            <label>
+                <input type="radio" name="voto" value="partidoC"> Partido C
+            </label>
+            <br>
+            <button class="btn btn-primary">Votar</button>
+        </form>
+        <hr>
+        <form action="SvPartidos" method="GET">
+            <button type="submit" name="mostrarResultados" class="btn btn-primary">Mostrar resultados</button>
+           
+            
+        </form>
+    </body>
+</html>
